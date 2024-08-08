@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\sylva\Desktop\formation\Année 2\Projet 14\876-p14-critipixel\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.31" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.31" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.31" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">C:\Users\sylva\Desktop\formation\Année 2\Projet 14\876-p14-critipixel\src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Doctrine/DataFixtures/TagFixtures.php.html#11">App\Doctrine\DataFixtures\TagFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/UserFixtures.php.html#10">App\Doctrine\DataFixtures\UserFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#20">App\Doctrine\DataFixtures\VideoGameFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/EntityListener/UserListener.php.html#11">App\Doctrine\EntityListener\UserListener</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Faker/FrenchGeneratorFactory.php.html#10">App\Faker\FrenchGeneratorFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/ReviewType.php.html#15">App\Form\ReviewType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Tag.php.html#16">App\Model\Entity\Tag</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Info.php.html#7">App\Model\ValueObject\Info</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Page.php.html#7">App\Model\ValueObject\Page</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Twig/Components/Progress.php.html#8">App\Twig\Components\Progress</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Direction.php.html#9">App\Model\ValueObject\Direction</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Sorting.php.html#9">App\Model\ValueObject\Sorting</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#20">App\List\VideoGameList\Pagination</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Doctrine/Repository/VideoGameRepository.php.html#17">App\Doctrine\Repository\VideoGameRepository</a></td><td class="text-right">3%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#16">App\Model\Entity\Review</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="Controller/VideoGameController.php.html#20">App\Controller\VideoGameController</a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#29">App\Model\Entity\VideoGame</a></td><td class="text-right">13%</td></tr>
+       <tr><td><a href="List/VideoGameList/Filter.php.html#9">App\List\VideoGameList\Filter</a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#23">App\List\VideoGameList\VideoGamesList</a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="Security/Voter/VideoGameVoter.php.html#10">App\Security\Voter\VideoGameVoter</a></td><td class="text-right">20%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#24">App\Model\Entity\User</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#10">App\Model\Entity\NumberOfRatingPerValue</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Controller/AuthController.php.html#16">App\Controller\AuthController</a></td><td class="text-right">69%</td></tr>
+       <tr><td><a href="Model/Trait/EnumTrait.php.html#7">App\Model\Trait\EnumTrait</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="List/VideoGameList/PaginationValueResolver.php.html#14">App\List\VideoGameList\PaginationValueResolver</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#29">App\Model\Entity\VideoGame</a></td><td class="text-right">468</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#20">App\List\VideoGameList\Pagination</a></td><td class="text-right">314</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#23">App\List\VideoGameList\VideoGamesList</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#20">App\Doctrine\DataFixtures\VideoGameFixtures</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Doctrine/Repository/VideoGameRepository.php.html#17">App\Doctrine\Repository\VideoGameRepository</a></td><td class="text-right">18</td></tr>
+       <tr><td><a href="Controller/VideoGameController.php.html#20">App\Controller\VideoGameController</a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="Security/Voter/VideoGameVoter.php.html#10">App\Security\Voter\VideoGameVoter</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Twig/Components/Progress.php.html#8">App\Twig\Components\Progress</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/AuthController.php.html#16">App\Controller\AuthController</a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Model/Trait/EnumTrait.php.html#7">App\Model\Trait\EnumTrait</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="List/VideoGameList/PaginationValueResolver.php.html#14">App\List\VideoGameList\PaginationValueResolver</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/VideoGameController.php.html#35"><abbr title="App\Controller\VideoGameController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/TagFixtures.php.html#13"><abbr title="App\Doctrine\DataFixtures\TagFixtures::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/TagFixtures.php.html#17"><abbr title="App\Doctrine\DataFixtures\TagFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/UserFixtures.php.html#12"><abbr title="App\Doctrine\DataFixtures\UserFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#22"><abbr title="App\Doctrine\DataFixtures\VideoGameFixtures::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#29"><abbr title="App\Doctrine\DataFixtures\VideoGameFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#85"><abbr title="App\Doctrine\DataFixtures\VideoGameFixtures::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/EntityListener/UserListener.php.html#13"><abbr title="App\Doctrine\EntityListener\UserListener::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/EntityListener/UserListener.php.html#17"><abbr title="App\Doctrine\EntityListener\UserListener::hashPassword">hashPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Doctrine/Repository/VideoGameRepository.php.html#27"><abbr title="App\Doctrine\Repository\VideoGameRepository::getVideoGames">getVideoGames</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Faker/FrenchGeneratorFactory.php.html#12"><abbr title="App\Faker\FrenchGeneratorFactory::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/ReviewType.php.html#17"><abbr title="App\Form\ReviewType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/ReviewType.php.html#22"><abbr title="App\Form\ReviewType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Filter.php.html#20"><abbr title="App\List\VideoGameList\Filter::getSearch">getSearch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Filter.php.html#25"><abbr title="App\List\VideoGameList\Filter::setSearch">setSearch</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Filter.php.html#31"><abbr title="App\List\VideoGameList\Filter::getTags">getTags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Filter.php.html#36"><abbr title="App\List\VideoGameList\Filter::setTags">setTags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#41"><abbr title="App\List\VideoGameList\Pagination::getOffset">getOffset</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#46"><abbr title="App\List\VideoGameList\Pagination::getLastPage">getLastPage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#55"><abbr title="App\List\VideoGameList\Pagination::init">init</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#62"><abbr title="App\List\VideoGameList\Pagination::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#72"><abbr title="App\List\VideoGameList\Pagination::getIterator">getIterator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#81"><abbr title="App\List\VideoGameList\Pagination::getInfo">getInfo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#95"><abbr title="App\List\VideoGameList\Pagination::getPage">getPage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#100"><abbr title="App\List\VideoGameList\Pagination::getLimit">getLimit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#105"><abbr title="App\List\VideoGameList\Pagination::getDirections">getDirections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#110"><abbr title="App\List\VideoGameList\Pagination::getAllSorting">getAllSorting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#115"><abbr title="App\List\VideoGameList\Pagination::getSorting">getSorting</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#120"><abbr title="App\List\VideoGameList\Pagination::getDirection">getDirection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#128"><abbr title="App\List\VideoGameList\Pagination::toArray">toArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#138"><abbr title="App\List\VideoGameList\Pagination::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#46"><abbr title="App\List\VideoGameList\VideoGamesList::getForm">getForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#135"><abbr title="App\List\VideoGameList\VideoGamesList::getFilter">getFilter</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#140"><abbr title="App\List\VideoGameList\VideoGamesList::getPagination">getPagination</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#145"><abbr title="App\List\VideoGameList\VideoGamesList::getIterator">getIterator</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#150"><abbr title="App\List\VideoGameList\VideoGamesList::count">count</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#155"><abbr title="App\List\VideoGameList\VideoGamesList::generateUrl">generateUrl</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#37"><abbr title="App\Model\Entity\NumberOfRatingPerValue::getNumberOfOne">getNumberOfOne</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#47"><abbr title="App\Model\Entity\NumberOfRatingPerValue::getNumberOfTwo">getNumberOfTwo</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#57"><abbr title="App\Model\Entity\NumberOfRatingPerValue::getNumberOfThree">getNumberOfThree</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#67"><abbr title="App\Model\Entity\NumberOfRatingPerValue::getNumberOfFour">getNumberOfFour</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/NumberOfRatingPerValue.php.html#77"><abbr title="App\Model\Entity\NumberOfRatingPerValue::getNumberOfFive">getNumberOfFive</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#39"><abbr title="App\Model\Entity\Review::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#44"><abbr title="App\Model\Entity\Review::getVideoGame">getVideoGame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#49"><abbr title="App\Model\Entity\Review::setVideoGame">setVideoGame</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#55"><abbr title="App\Model\Entity\Review::getUser">getUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#60"><abbr title="App\Model\Entity\Review::setUser">setUser</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#71"><abbr title="App\Model\Entity\Review::setRating">setRating</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#77"><abbr title="App\Model\Entity\Review::getComment">getComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Review.php.html#82"><abbr title="App\Model\Entity\Review::setComment">setComment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Tag.php.html#34"><abbr title="App\Model\Entity\Tag::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Tag.php.html#39"><abbr title="App\Model\Entity\Tag::getCode">getCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Tag.php.html#44"><abbr title="App\Model\Entity\Tag::getName">getName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/Tag.php.html#49"><abbr title="App\Model\Entity\Tag::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#55"><abbr title="App\Model\Entity\User::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#82"><abbr title="App\Model\Entity\User::getPassword">getPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#87"><abbr title="App\Model\Entity\User::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#104"><abbr title="App\Model\Entity\User::getRoles">getRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#109"><abbr title="App\Model\Entity\User::eraseCredentials">eraseCredentials</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/User.php.html#114"><abbr title="App\Model\Entity\User::getUserIdentifier">getUserIdentifier</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#93"><abbr title="App\Model\Entity\VideoGame::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#101"><abbr title="App\Model\Entity\VideoGame::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#106"><abbr title="App\Model\Entity\VideoGame::getTitle">getTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#111"><abbr title="App\Model\Entity\VideoGame::setTitle">setTitle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#117"><abbr title="App\Model\Entity\VideoGame::getSlug">getSlug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#122"><abbr title="App\Model\Entity\VideoGame::setImageFile">setImageFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#131"><abbr title="App\Model\Entity\VideoGame::getImageFile">getImageFile</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#136"><abbr title="App\Model\Entity\VideoGame::setImageName">setImageName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#142"><abbr title="App\Model\Entity\VideoGame::getImageName">getImageName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#147"><abbr title="App\Model\Entity\VideoGame::setImageSize">setImageSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#153"><abbr title="App\Model\Entity\VideoGame::getImageSize">getImageSize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#158"><abbr title="App\Model\Entity\VideoGame::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#163"><abbr title="App\Model\Entity\VideoGame::setDescription">setDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#169"><abbr title="App\Model\Entity\VideoGame::getReleaseDate">getReleaseDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#174"><abbr title="App\Model\Entity\VideoGame::setReleaseDate">setReleaseDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#180"><abbr title="App\Model\Entity\VideoGame::getTest">getTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#185"><abbr title="App\Model\Entity\VideoGame::setTest">setTest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#191"><abbr title="App\Model\Entity\VideoGame::getRating">getRating</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#196"><abbr title="App\Model\Entity\VideoGame::setRating">setRating</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#221"><abbr title="App\Model\Entity\VideoGame::getTags">getTags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#234"><abbr title="App\Model\Entity\VideoGame::hasAlreadyReview">hasAlreadyReview</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Info.php.html#9"><abbr title="App\Model\ValueObject\Info::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Page.php.html#9"><abbr title="App\Model\ValueObject\Page::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/Voter/VideoGameVoter.php.html#19"><abbr title="App\Security\Voter\VideoGameVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Twig/Components/Progress.php.html#15"><abbr title="App\Twig\Components\Progress::getPercent">getPercent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Direction.php.html#16"><abbr title="App\Model\ValueObject\Direction::getSql">getSql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model/ValueObject/Sorting.php.html#18"><abbr title="App\Model\ValueObject\Sorting::getSql">getSql</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#51"><abbr title="App\List\VideoGameList\VideoGamesList::handleRequest">handleRequest</abbr></a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="Controller/AuthController.php.html#29"><abbr title="App\Controller\AuthController::register">register</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Controller/VideoGameController.php.html#23"><abbr title="App\Controller\VideoGameController::list">list</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Model/Trait/EnumTrait.php.html#9"><abbr title="App\Model\Trait\EnumTrait::tryFromName">tryFromName</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="List/VideoGameList/PaginationValueResolver.php.html#17"><abbr title="App\List\VideoGameList\PaginationValueResolver::resolve">resolve</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/VideoGameController.php.html#35"><abbr title="App\Controller\VideoGameController::show">show</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Doctrine/DataFixtures/VideoGameFixtures.php.html#29"><abbr title="App\Doctrine\DataFixtures\VideoGameFixtures::load">load</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Doctrine/Repository/VideoGameRepository.php.html#27"><abbr title="App\Doctrine\Repository\VideoGameRepository::getVideoGames">getVideoGames</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="List/VideoGameList/VideoGamesList.php.html#51"><abbr title="App\List\VideoGameList\VideoGamesList::handleRequest">handleRequest</abbr></a></td><td class="text-right">11</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#46"><abbr title="App\List\VideoGameList\Pagination::getLastPage">getLastPage</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#72"><abbr title="App\List\VideoGameList\Pagination::getIterator">getIterator</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="List/VideoGameList/Pagination.php.html#81"><abbr title="App\List\VideoGameList\Pagination::getInfo">getInfo</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Model/Entity/VideoGame.php.html#122"><abbr title="App\Model\Entity\VideoGame::setImageFile">setImageFile</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security/Voter/VideoGameVoter.php.html#19"><abbr title="App\Security\Voter\VideoGameVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Twig/Components/Progress.php.html#15"><abbr title="App\Twig\Components\Progress::getPercent">getPercent</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/AuthController.php.html#29"><abbr title="App\Controller\AuthController::register">register</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Model/Trait/EnumTrait.php.html#9"><abbr title="App\Model\Trait\EnumTrait::tryFromName">tryFromName</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="List/VideoGameList/PaginationValueResolver.php.html#17"><abbr title="App\List\VideoGameList\PaginationValueResolver::resolve">resolve</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.31</a> using <a href="https://secure.php.net/" target="_top">PHP 8.2.13</a> and <a href="https://phpunit.de/">PHPUnit 9.6.19</a> at Sun Aug 4 13:43:56 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.31" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.31" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.31" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,4,2,2,0,0,1,2,1,1,0,15], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([87,0,0,1,0,0,2,0,1,1,0,33], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[69.23076923076923,4,"<a href=\"Controller\/AuthController.php.html#16\">App\\Controller\\AuthController<\/a>"],[8.333333333333332,4,"<a href=\"Controller\/VideoGameController.php.html#20\">App\\Controller\\VideoGameController<\/a>"],[0,2,"<a href=\"Doctrine\/DataFixtures\/TagFixtures.php.html#11\">App\\Doctrine\\DataFixtures\\TagFixtures<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/UserFixtures.php.html#10\">App\\Doctrine\\DataFixtures\\UserFixtures<\/a>"],[0,5,"<a href=\"Doctrine\/DataFixtures\/VideoGameFixtures.php.html#20\">App\\Doctrine\\DataFixtures\\VideoGameFixtures<\/a>"],[0,2,"<a href=\"Doctrine\/EntityListener\/UserListener.php.html#11\">App\\Doctrine\\EntityListener\\UserListener<\/a>"],[3.0303030303030303,4,"<a href=\"Doctrine\/Repository\/VideoGameRepository.php.html#17\">App\\Doctrine\\Repository\\VideoGameRepository<\/a>"],[0,1,"<a href=\"Faker\/FrenchGeneratorFactory.php.html#10\">App\\Faker\\FrenchGeneratorFactory<\/a>"],[100,2,"<a href=\"Form\/FilterType.php.html#15\">App\\Form\\FilterType<\/a>"],[100,2,"<a href=\"Form\/RegisterType.php.html#15\">App\\Form\\RegisterType<\/a>"],[0,2,"<a href=\"Form\/ReviewType.php.html#15\">App\\Form\\ReviewType<\/a>"],[100,0,"<a href=\"Kernel.php.html#8\">App\\Kernel<\/a>"],[100,2,"<a href=\"List\/ListFactory.php.html#13\">App\\List\\ListFactory<\/a>"],[14.285714285714285,5,"<a href=\"List\/VideoGameList\/Filter.php.html#9\">App\\List\\VideoGameList\\Filter<\/a>"],[2.941176470588235,18,"<a href=\"List\/VideoGameList\/Pagination.php.html#20\">App\\List\\VideoGameList\\Pagination<\/a>"],[88.88888888888889,2,"<a href=\"List\/VideoGameList\/PaginationValueResolver.php.html#14\">App\\List\\VideoGameList\\PaginationValueResolver<\/a>"],[20,11,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#23\">App\\List\\VideoGameList\\VideoGamesList<\/a>"],[66.66666666666666,11,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#10\">App\\Model\\Entity\\NumberOfRatingPerValue<\/a>"],[7.6923076923076925,9,"<a href=\"Model\/Entity\/Review.php.html#16\">App\\Model\\Entity\\Review<\/a>"],[0,4,"<a href=\"Model\/Entity\/Tag.php.html#16\">App\\Model\\Entity\\Tag<\/a>"],[56.25,12,"<a href=\"Model\/Entity\/User.php.html#24\">App\\Model\\Entity\\User<\/a>"],[13.157894736842104,26,"<a href=\"Model\/Entity\/VideoGame.php.html#29\">App\\Model\\Entity\\VideoGame<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Info.php.html#7\">App\\Model\\ValueObject\\Info<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Page.php.html#7\">App\\Model\\ValueObject\\Page<\/a>"],[100,5,"<a href=\"Rating\/RatingHandler.php.html#10\">App\\Rating\\RatingHandler<\/a>"],[20,4,"<a href=\"Security\/Voter\/VideoGameVoter.php.html#10\">App\\Security\\Voter\\VideoGameVoter<\/a>"],[100,0,"<a href=\"Twig\/Components\/Alert.php.html#7\">App\\Twig\\Components\\Alert<\/a>"],[100,0,"<a href=\"Twig\/Components\/Card.php.html#8\">App\\Twig\\Components\\Card<\/a>"],[100,0,"<a href=\"Twig\/Components\/Filter.php.html#8\">App\\Twig\\Components\\Filter<\/a>"],[100,0,"<a href=\"Twig\/Components\/Info.php.html#8\">App\\Twig\\Components\\Info<\/a>"],[100,2,"<a href=\"Twig\/Components\/NavBar.php.html#8\">App\\Twig\\Components\\NavBar<\/a>"],[100,0,"<a href=\"Twig\/Components\/Pagination.php.html#8\">App\\Twig\\Components\\Pagination<\/a>"],[0,2,"<a href=\"Twig\/Components\/Progress.php.html#8\">App\\Twig\\Components\\Progress<\/a>"],[100,0,"<a href=\"Twig\/Components\/Rating.php.html#7\">App\\Twig\\Components\\Rating<\/a>"],[100,0,"<a href=\"Twig\/Components\/Review.php.html#7\">App\\Twig\\Components\\Review<\/a>"],[100,0,"<a href=\"Twig\/Components\/Sorting.php.html#8\">App\\Twig\\Components\\Sorting<\/a>"],[100,0,"<a href=\"Twig\/Components\/Tabs.php.html#7\">App\\Twig\\Components\\Tabs<\/a>"],[75,3,"<a href=\"Model\/Trait\/EnumTrait.php.html#7\">App\\Model\\Trait\\EnumTrait<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Direction.php.html#9\">App\\Model\\ValueObject\\Direction<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Sorting.php.html#9\">App\\Model\\ValueObject\\Sorting<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Controller\/AuthController.php.html#19\">App\\Controller\\AuthController::login<\/a>"],[50,3,"<a href=\"Controller\/AuthController.php.html#29\">App\\Controller\\AuthController::register<\/a>"],[50,1,"<a href=\"Controller\/VideoGameController.php.html#23\">App\\Controller\\VideoGameController::list<\/a>"],[0,3,"<a href=\"Controller\/VideoGameController.php.html#35\">App\\Controller\\VideoGameController::show<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/TagFixtures.php.html#13\">App\\Doctrine\\DataFixtures\\TagFixtures::__construct<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/TagFixtures.php.html#17\">App\\Doctrine\\DataFixtures\\TagFixtures::load<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/UserFixtures.php.html#12\">App\\Doctrine\\DataFixtures\\UserFixtures::load<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/VideoGameFixtures.php.html#22\">App\\Doctrine\\DataFixtures\\VideoGameFixtures::__construct<\/a>"],[0,3,"<a href=\"Doctrine\/DataFixtures\/VideoGameFixtures.php.html#29\">App\\Doctrine\\DataFixtures\\VideoGameFixtures::load<\/a>"],[0,1,"<a href=\"Doctrine\/DataFixtures\/VideoGameFixtures.php.html#85\">App\\Doctrine\\DataFixtures\\VideoGameFixtures::getDependencies<\/a>"],[0,1,"<a href=\"Doctrine\/EntityListener\/UserListener.php.html#13\">App\\Doctrine\\EntityListener\\UserListener::__construct<\/a>"],[0,1,"<a href=\"Doctrine\/EntityListener\/UserListener.php.html#17\">App\\Doctrine\\EntityListener\\UserListener::hashPassword<\/a>"],[100,1,"<a href=\"Doctrine\/Repository\/VideoGameRepository.php.html#19\">App\\Doctrine\\Repository\\VideoGameRepository::__construct<\/a>"],[0,3,"<a href=\"Doctrine\/Repository\/VideoGameRepository.php.html#27\">App\\Doctrine\\Repository\\VideoGameRepository::getVideoGames<\/a>"],[0,1,"<a href=\"Faker\/FrenchGeneratorFactory.php.html#12\">App\\Faker\\FrenchGeneratorFactory::create<\/a>"],[100,1,"<a href=\"Form\/FilterType.php.html#17\">App\\Form\\FilterType::buildForm<\/a>"],[100,1,"<a href=\"Form\/FilterType.php.html#40\">App\\Form\\FilterType::configureOptions<\/a>"],[100,1,"<a href=\"Form\/RegisterType.php.html#17\">App\\Form\\RegisterType::configureOptions<\/a>"],[100,1,"<a href=\"Form\/RegisterType.php.html#22\">App\\Form\\RegisterType::buildForm<\/a>"],[0,1,"<a href=\"Form\/ReviewType.php.html#17\">App\\Form\\ReviewType::configureOptions<\/a>"],[0,1,"<a href=\"Form\/ReviewType.php.html#22\">App\\Form\\ReviewType::buildForm<\/a>"],[100,1,"<a href=\"List\/ListFactory.php.html#15\">App\\List\\ListFactory::__construct<\/a>"],[100,1,"<a href=\"List\/ListFactory.php.html#22\">App\\List\\ListFactory::createVideoGamesList<\/a>"],[100,1,"<a href=\"List\/VideoGameList\/Filter.php.html#14\">App\\List\\VideoGameList\\Filter::__construct<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Filter.php.html#20\">App\\List\\VideoGameList\\Filter::getSearch<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Filter.php.html#25\">App\\List\\VideoGameList\\Filter::setSearch<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Filter.php.html#31\">App\\List\\VideoGameList\\Filter::getTags<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Filter.php.html#36\">App\\List\\VideoGameList\\Filter::setTags<\/a>"],[100,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#33\">App\\List\\VideoGameList\\Pagination::__construct<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#41\">App\\List\\VideoGameList\\Pagination::getOffset<\/a>"],[0,2,"<a href=\"List\/VideoGameList\/Pagination.php.html#46\">App\\List\\VideoGameList\\Pagination::getLastPage<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#55\">App\\List\\VideoGameList\\Pagination::init<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#62\">App\\List\\VideoGameList\\Pagination::add<\/a>"],[0,2,"<a href=\"List\/VideoGameList\/Pagination.php.html#72\">App\\List\\VideoGameList\\Pagination::getIterator<\/a>"],[0,2,"<a href=\"List\/VideoGameList\/Pagination.php.html#81\">App\\List\\VideoGameList\\Pagination::getInfo<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#95\">App\\List\\VideoGameList\\Pagination::getPage<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#100\">App\\List\\VideoGameList\\Pagination::getLimit<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#105\">App\\List\\VideoGameList\\Pagination::getDirections<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#110\">App\\List\\VideoGameList\\Pagination::getAllSorting<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#115\">App\\List\\VideoGameList\\Pagination::getSorting<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#120\">App\\List\\VideoGameList\\Pagination::getDirection<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#128\">App\\List\\VideoGameList\\Pagination::toArray<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/Pagination.php.html#138\">App\\List\\VideoGameList\\Pagination::count<\/a>"],[88.88888888888889,2,"<a href=\"List\/VideoGameList\/PaginationValueResolver.php.html#17\">App\\List\\VideoGameList\\PaginationValueResolver::resolve<\/a>"],[100,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#38\">App\\List\\VideoGameList\\VideoGamesList::__construct<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#46\">App\\List\\VideoGameList\\VideoGamesList::getForm<\/a>"],[21.53846153846154,4,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#51\">App\\List\\VideoGameList\\VideoGamesList::handleRequest<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#135\">App\\List\\VideoGameList\\VideoGamesList::getFilter<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#140\">App\\List\\VideoGameList\\VideoGamesList::getPagination<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#145\">App\\List\\VideoGameList\\VideoGamesList::getIterator<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#150\">App\\List\\VideoGameList\\VideoGamesList::count<\/a>"],[0,1,"<a href=\"List\/VideoGameList\/VideoGamesList.php.html#155\">App\\List\\VideoGameList\\VideoGamesList::generateUrl<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#28\">App\\Model\\Entity\\NumberOfRatingPerValue::clear<\/a>"],[0,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#37\">App\\Model\\Entity\\NumberOfRatingPerValue::getNumberOfOne<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#42\">App\\Model\\Entity\\NumberOfRatingPerValue::increaseOne<\/a>"],[0,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#47\">App\\Model\\Entity\\NumberOfRatingPerValue::getNumberOfTwo<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#52\">App\\Model\\Entity\\NumberOfRatingPerValue::increaseTwo<\/a>"],[0,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#57\">App\\Model\\Entity\\NumberOfRatingPerValue::getNumberOfThree<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#62\">App\\Model\\Entity\\NumberOfRatingPerValue::increaseThree<\/a>"],[0,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#67\">App\\Model\\Entity\\NumberOfRatingPerValue::getNumberOfFour<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#72\">App\\Model\\Entity\\NumberOfRatingPerValue::increaseFour<\/a>"],[0,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#77\">App\\Model\\Entity\\NumberOfRatingPerValue::getNumberOfFive<\/a>"],[100,1,"<a href=\"Model\/Entity\/NumberOfRatingPerValue.php.html#82\">App\\Model\\Entity\\NumberOfRatingPerValue::increaseFive<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#39\">App\\Model\\Entity\\Review::getId<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#44\">App\\Model\\Entity\\Review::getVideoGame<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#49\">App\\Model\\Entity\\Review::setVideoGame<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#55\">App\\Model\\Entity\\Review::getUser<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#60\">App\\Model\\Entity\\Review::setUser<\/a>"],[100,1,"<a href=\"Model\/Entity\/Review.php.html#66\">App\\Model\\Entity\\Review::getRating<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#71\">App\\Model\\Entity\\Review::setRating<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#77\">App\\Model\\Entity\\Review::getComment<\/a>"],[0,1,"<a href=\"Model\/Entity\/Review.php.html#82\">App\\Model\\Entity\\Review::setComment<\/a>"],[0,1,"<a href=\"Model\/Entity\/Tag.php.html#34\">App\\Model\\Entity\\Tag::getId<\/a>"],[0,1,"<a href=\"Model\/Entity\/Tag.php.html#39\">App\\Model\\Entity\\Tag::getCode<\/a>"],[0,1,"<a href=\"Model\/Entity\/Tag.php.html#44\">App\\Model\\Entity\\Tag::getName<\/a>"],[0,1,"<a href=\"Model\/Entity\/Tag.php.html#49\">App\\Model\\Entity\\Tag::setName<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#55\">App\\Model\\Entity\\User::getId<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#60\">App\\Model\\Entity\\User::getUsername<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#65\">App\\Model\\Entity\\User::setUsername<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#71\">App\\Model\\Entity\\User::getEmail<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#76\">App\\Model\\Entity\\User::setEmail<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#82\">App\\Model\\Entity\\User::getPassword<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#87\">App\\Model\\Entity\\User::setPassword<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#93\">App\\Model\\Entity\\User::getPlainPassword<\/a>"],[100,1,"<a href=\"Model\/Entity\/User.php.html#98\">App\\Model\\Entity\\User::setPlainPassword<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#104\">App\\Model\\Entity\\User::getRoles<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#109\">App\\Model\\Entity\\User::eraseCredentials<\/a>"],[0,1,"<a href=\"Model\/Entity\/User.php.html#114\">App\\Model\\Entity\\User::getUserIdentifier<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#93\">App\\Model\\Entity\\VideoGame::__construct<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#101\">App\\Model\\Entity\\VideoGame::getId<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#106\">App\\Model\\Entity\\VideoGame::getTitle<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#111\">App\\Model\\Entity\\VideoGame::setTitle<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#117\">App\\Model\\Entity\\VideoGame::getSlug<\/a>"],[0,2,"<a href=\"Model\/Entity\/VideoGame.php.html#122\">App\\Model\\Entity\\VideoGame::setImageFile<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#131\">App\\Model\\Entity\\VideoGame::getImageFile<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#136\">App\\Model\\Entity\\VideoGame::setImageName<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#142\">App\\Model\\Entity\\VideoGame::getImageName<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#147\">App\\Model\\Entity\\VideoGame::setImageSize<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#153\">App\\Model\\Entity\\VideoGame::getImageSize<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#158\">App\\Model\\Entity\\VideoGame::getDescription<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#163\">App\\Model\\Entity\\VideoGame::setDescription<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#169\">App\\Model\\Entity\\VideoGame::getReleaseDate<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#174\">App\\Model\\Entity\\VideoGame::setReleaseDate<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#180\">App\\Model\\Entity\\VideoGame::getTest<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#185\">App\\Model\\Entity\\VideoGame::setTest<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#191\">App\\Model\\Entity\\VideoGame::getRating<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#196\">App\\Model\\Entity\\VideoGame::setRating<\/a>"],[100,1,"<a href=\"Model\/Entity\/VideoGame.php.html#202\">App\\Model\\Entity\\VideoGame::getAverageRating<\/a>"],[100,1,"<a href=\"Model\/Entity\/VideoGame.php.html#207\">App\\Model\\Entity\\VideoGame::setAverageRating<\/a>"],[100,1,"<a href=\"Model\/Entity\/VideoGame.php.html#213\">App\\Model\\Entity\\VideoGame::getNumberOfRatingsPerValue<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#221\">App\\Model\\Entity\\VideoGame::getTags<\/a>"],[100,1,"<a href=\"Model\/Entity\/VideoGame.php.html#229\">App\\Model\\Entity\\VideoGame::getReviews<\/a>"],[0,1,"<a href=\"Model\/Entity\/VideoGame.php.html#234\">App\\Model\\Entity\\VideoGame::hasAlreadyReview<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Info.php.html#9\">App\\Model\\ValueObject\\Info::__construct<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Page.php.html#9\">App\\Model\\ValueObject\\Page::__construct<\/a>"],[100,2,"<a href=\"Rating\/RatingHandler.php.html#12\">App\\Rating\\RatingHandler::calculateAverage<\/a>"],[100,3,"<a href=\"Rating\/RatingHandler.php.html#29\">App\\Rating\\RatingHandler::countRatingsPerValue<\/a>"],[100,2,"<a href=\"Security\/Voter\/VideoGameVoter.php.html#14\">App\\Security\\Voter\\VideoGameVoter::supports<\/a>"],[0,2,"<a href=\"Security\/Voter\/VideoGameVoter.php.html#19\">App\\Security\\Voter\\VideoGameVoter::voteOnAttribute<\/a>"],[100,1,"<a href=\"Twig\/Components\/NavBar.php.html#11\">App\\Twig\\Components\\NavBar::__construct<\/a>"],[100,1,"<a href=\"Twig\/Components\/NavBar.php.html#15\">App\\Twig\\Components\\NavBar::isLoggedIn<\/a>"],[0,2,"<a href=\"Twig\/Components\/Progress.php.html#15\">App\\Twig\\Components\\Progress::getPercent<\/a>"],[75,3,"<a href=\"Model\/Trait\/EnumTrait.php.html#9\">App\\Model\\Trait\\EnumTrait::tryFromName<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Direction.php.html#16\">App\\Model\\ValueObject\\Direction::getSql<\/a>"],[0,1,"<a href=\"Model\/ValueObject\/Sorting.php.html#18\">App\\Model\\ValueObject\\Sorting::getSql<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
