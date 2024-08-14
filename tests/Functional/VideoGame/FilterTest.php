@@ -64,15 +64,15 @@ final class FilterTest extends FunctionalTestCase
                 'expectedCount' => 10,
             ],
             'Single tag, matching games' => [
-                'tags' => [132],
+                'tags' => [153],
                 'expectedCount' => 10,
             ],
             'Multiple tags, matching games' => [
-                'tags' => [132, 133],
+                'tags' => [154, 156],
                 'expectedCount' => 9,
             ],
             'Multiple tags, no matching games' => [
-                'tags' => [132, 133, 137],
+                'tags' => [154, 156, 163],
                 'expectedCount' => 0,
             ],
         ];
