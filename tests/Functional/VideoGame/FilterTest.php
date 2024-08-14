@@ -30,6 +30,7 @@ final class FilterTest extends FunctionalTestCase
 
      /**
      * @dataProvider tagsDataProvider
+     * @param int[] $tags
      */
     public function testShouldFilterVideoGamesByTags(array $tags, int $expectedCount): void
     {
@@ -52,6 +53,9 @@ final class FilterTest extends FunctionalTestCase
         self::assertSelectorCount($expectedCount, 'article.game-card');
     }
 
+    /**
+     * @return array<string, array{tags: int[], expectedCount: int}>
+     */
     public function tagsDataProvider(): array
     {
         return [

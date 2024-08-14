@@ -24,6 +24,7 @@ class Tag
 
     #[Column(unique: true)]
     #[Slug(fields: ['name'])]
+    /** @phpstan-ignore-next-line */
     private string $code;
 
     #[NotBlank]

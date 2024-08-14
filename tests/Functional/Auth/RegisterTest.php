@@ -18,7 +18,7 @@ final class RegisterTest extends FunctionalTestCase
 
         self::assertResponseRedirects('/auth/login');
 
-        $user = $this->getEntityManager()->getRepository(User::class)->findOneByEmail('user@email.com');
+        $user = $this->getEntityManager()->getRepository(User::class)->findOneBy(['email' => 'user@email.com']);
 
         $userPasswordHasher = $this->service(UserPasswordHasherInterface::class);
 
@@ -30,6 +30,7 @@ final class RegisterTest extends FunctionalTestCase
 
     /**
      * @dataProvider provideInvalidFormData
+     * @param array<string, mixed> $formData
      */
     public function testThatRegistrationShouldFailed(array $formData): void
     {
@@ -40,6 +41,9 @@ final class RegisterTest extends FunctionalTestCase
         self::assertResponseIsUnprocessable();
     }
 
+    /**
+     * @return iterable<array{0: array<string, mixed>}>
+     */
     public static function provideInvalidFormData(): iterable
     {
         yield 'empty username' => [self::getFormData(['register[username]' => ''])];
@@ -50,6 +54,10 @@ final class RegisterTest extends FunctionalTestCase
         yield 'invalid email' => [self::getFormData(['register[email]' => 'fail'])];
     }
 
+    /**
+     * @param array<string, mixed> $overrideData
+     * @return array<string, mixed>
+     */
     public static function getFormData(array $overrideData = []): array
     {
         return [
