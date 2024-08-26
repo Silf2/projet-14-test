@@ -1,0 +1,33 @@
+name: CI project 14
+on: [push]
+
+jobs:
+  ci:
+    runs-on:  ubuntu-latest
+    
+    steps:
+      - name: Checkout
+      uses: actions/checkout@v3
+
+      - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions : mbstring
+
+      - name: Install composer dependencies
+      run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
+
+      - name: Create Database & load Fixtures
+      run: |           
+        php bin/console doctrine:database:drop -f --if-exists --env=test
+        php bin/console doctrine:database:create --env=test
+        php bin/console doctrine:migrations:migrate -n --env=test
+        php bin/console doctrine:fixtures:load -n --purge-with-truncate --env=test
+
+      - name: Run tests
+      run: php bin/phpunit tests/
+
+      - name: Run PHPStan
+      run: vendor/bin/phpstan analyse src -l 6
+    
