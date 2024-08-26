@@ -236,4 +236,24 @@ class VideoGame
     {
         return $this->reviews->exists(static fn (int $key, Review $review): bool => $review->getUser() === $user);
     }
+
+    /**
+     * Get the value of updatedAt
+     */ 
+    public function getUpdatedAt(): DateTimeImmutable
+    {
+        return $this->updatedAt;
+    }
+
+    /**
+     * Set the value of updatedAt
+     *
+     * @return  self
+     */ 
+    public function setUpdatedAt(DateTimeImmutable $updatedAt)
+    {
+        $this->updatedAt = $updatedAt;
+
+        return $this;
+    }
 }

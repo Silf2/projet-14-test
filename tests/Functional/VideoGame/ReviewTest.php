@@ -21,7 +21,7 @@ final class ReviewTest extends WebTestCase
 
     protected function login(string $email = 'user+0@email.com'): void
     {
-        $user = $this->client->getContainer()->get(EntityManagerInterface::class)->getRepository(User::class)->findOneByEmail($email);
+        $user = $this->client->getContainer()->get(EntityManagerInterface::class)->getRepository(User::class)->findOneBy(["email" => $email]);
         $this->client->loginUser($user);
     }
 
