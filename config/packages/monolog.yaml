@@ -24,18 +24,26 @@ when@dev:
                 channels: ["!event", "!doctrine", "!console"]
 
 when@test:
+    # monolog:
+    #     handlers:
+    #         main:
+    #             type: fingers_crossed
+    #             action_level: error
+    #             handler: nested
+    #             excluded_http_codes: [404, 405]
+    #             channels: ["!event"]
+    #         nested:
+    #             type: stream
+    #             path: "%kernel.logs_dir%/%kernel.environment%.log"
+    #             level: debug
     monolog:
+        channels: [ "app" ]
         handlers:
-            main:
-                type: fingers_crossed
-                action_level: error
-                handler: nested
-                excluded_http_codes: [404, 405]
-                channels: ["!event"]
-            nested:
+            app:
                 type: stream
-                path: "%kernel.logs_dir%/%kernel.environment%.log"
-                level: debug
+                path: "%kernel.logs_dir%/%kernel.environment%.app.log"
+                level: info
+                channels: [ "app" ]
 
 when@prod:
     monolog:
