@@ -27,10 +27,10 @@ jobs:
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          extensions: mbstring
+          extensions: pdo_mysql
 
       - name: Install composer dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest --no-interaction
+        run: composer install --prefer-dist --no-progress
 
       - name: Create Database & load Fixtures
         env:
@@ -38,8 +38,8 @@ jobs:
         run: |           
           php bin/console doctrine:database:drop --if-exists --env=test
           php bin/console doctrine:database:create --env=test
-          php bin/console doctrine:migrations:migrate -n --env=test
-          php bin/console doctrine:fixtures:load -n --purge-with-truncate --env=test
+          php bin/console doctrine:migrations:migrate --up 'DoctrineMigrations\Version20240909111852' --env=test
+          php bin/console doctrine:fixtures:load --env=test
 
       - name: Run tests
         run: php bin/phpunit tests/
