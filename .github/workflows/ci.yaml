@@ -32,6 +32,9 @@ jobs:
       - name: Install composer dependencies
         run: composer install --prefer-dist --no-progress
 
+      - name: Clear Cache
+        run: php bin/console cache:clear --env=test
+
       - name: Create Database & load Fixtures
         env:
           DATABASE_URL: 'mysql://root:root@127.0.0.1:3306/test_db'
