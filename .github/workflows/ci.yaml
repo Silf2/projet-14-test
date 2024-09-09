@@ -30,7 +30,7 @@ jobs:
           extensions: pdo_mysql
 
       - name: Install composer dependencies
-        run: composer install --prefer-dist --no-progress
+        run: composer install --prefer-dist --no-progress --env=test
 
       - name: Create Database & load Fixtures
         run: |           
