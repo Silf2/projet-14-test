@@ -1,5 +1,6 @@
 php.local.ini
 .php-version
+/test.db
 
 ###> symfony/framework-bundle ###
 /.env.local
