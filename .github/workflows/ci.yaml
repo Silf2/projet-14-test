@@ -34,6 +34,7 @@ jobs:
 
       - name: Create Database & load Fixtures
         run: |           
+          php bin/console doctrine:database:drop --if-exists --env=test --force
           php bin/console doctrine:database:create --env=test
           php bin/console doctrine:fixtures:load -n --purge-with-truncate --env=test
 
