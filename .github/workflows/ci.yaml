@@ -30,10 +30,7 @@ jobs:
           extensions: pdo_mysql
 
       - name: Install composer dependencies
-        run: composer install --prefer-dist --no-progress
-
-      - name: Clear Cache
-        run: php bin/console cache:clear --env=test
+        run: composer install
 
       - name: Create Database & load Fixtures
         env:
