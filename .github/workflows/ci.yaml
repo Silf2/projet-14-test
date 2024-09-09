@@ -29,13 +29,21 @@ jobs:
           php-version: '8.2'
           extensions: pdo_mysql
 
-      - name: Install composer dependencies
-        run: composer install --no-script
+      - name: Get composer cache directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - name: Cache composer dependencies
+        uses: actions/cache@v1
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: ${{ runner.os }}-composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: ${{ runner.os }}-composer-
 
       - name: Create Database & load Fixtures
-        env:
-          DATABASE_URL: 'mysql://root:root@127.0.0.1:3306/test_db'
-        run: |           
+        run: |      
+          docker compose -f "docker-compose.yml" up -d --build
+          composer install     
           php bin/console doctrine:database:drop --if-exists --env=test
           php bin/console doctrine:database:create --env=test
           php bin/console doctrine:migrations:migrate -n --env=test
