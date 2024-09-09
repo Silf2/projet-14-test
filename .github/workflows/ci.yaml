@@ -29,9 +29,6 @@ jobs:
           php-version: '8.2'
           extensions: pdo_mysql
 
-      - name: Clear Cache
-        run: php bin/console cache:clear --env=test
-
       - name: Install composer dependencies
         run: composer install --no-script
 
