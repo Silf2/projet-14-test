@@ -28,12 +28,12 @@ jobs:
         with:
           php-version: '8.2'
           extensions: pdo_mysql
-        
-      - name: Clear cache
-        run: php bin/console c:c --env=test 
+
+      - name: Clear Cache
+        run: php bin/console cache:clear --env=test
 
       - name: Install composer dependencies
-        run: composer install --no-scripts
+        run: composer install --no-script
 
       - name: Create Database & load Fixtures
         env:
@@ -41,8 +41,8 @@ jobs:
         run: |           
           php bin/console doctrine:database:drop --if-exists --env=test
           php bin/console doctrine:database:create --env=test
-          php bin/console doctrine:migrations:migrate --up 'DoctrineMigrations\Version20240909111852' --env=test
-          php bin/console doctrine:fixtures:load --env=test
+          php bin/console doctrine:migrations:migrate -n --env=test
+          php bin/console doctrine:fixtures:load -n --purge-with-truncate --env=test
 
       - name: Run tests
         run: php bin/phpunit tests/
