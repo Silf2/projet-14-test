@@ -31,7 +31,7 @@ jobs:
           sudo apt install symfony-cli
       
       - name: Building Sass
-        run: php bin/console sass:build
+        run: symfony console sass:build
       
       - name: Run tests
         run: php bin/phpunit tests/
