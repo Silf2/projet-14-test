@@ -29,9 +29,9 @@ jobs:
         run: |
           curl -1sLf 'https://dl.cloudsmith.io/public/symfony/stable/setup.deb.sh' | sudo -E bash
           sudo apt install symfony-cli
-          
+
       - name: Launch server
-        run: symfony server:start -d
+        run: symfony server:start
 
       - name: Run tests
         run: php bin/phpunit tests/
