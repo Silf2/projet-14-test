@@ -11,7 +11,8 @@ final class LoginTest extends FunctionalTestCase
 {
     public function testThatLoginShouldSucceeded(): void
     {
-        $this->get('/auth/login');
+        $router = self::getContainer()->get("router.default");
+        $this->get($router->generate("auth_login"));
 
         $this->client->submitForm('Se connecter', [
             'email' => 'user+1@email.com',
